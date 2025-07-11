@@ -23,16 +23,20 @@ case3.addEventListener("click", (e)=>{
     e.preventDefault();
     let path = e.target.getAttribute("href");
     router[path]("case3")
+
 })
 
 function render (casees){
     main.innerHTML = `<h1>${casees}</h1>`
+    window.location.hash = "#/home"
 }
 function render2 (casees){
     main.innerHTML = `<h1>${casees}</h1>`
+    window.location.hash = "#/contact"
 }
 function render3 (casees){
     main.innerHTML = `<h1>${casees}</h1>`
+    window.location.hash = "#/terms"
 }
 
 
